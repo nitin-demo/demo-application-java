@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('test') {
+    stage('build') {
       steps {
-        sh 'mvn test'
+        sh 'echo Building ${BRANCH_NAME}...'
       }
     }
   }
