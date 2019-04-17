@@ -1,4 +1,7 @@
- @Library('github.com/nitin-demo/jenkins-demo-lib') _
+   @Library('github.com/hemant-demo/jenkins-demo-lib') _
+   stage('MavenInstallation'){
+       tools=toolsInstallation()
+   }
     standardBuild ([
        workspace:  '''
        echo ${WORKSPACE}''',
@@ -16,6 +19,6 @@
 ls -l
 '''
 ])	
-stage('BuildCommitSHA') {            
-sh=buildCommitSha()
+stage('Workspace') {            
+sh=workspace()
   }
