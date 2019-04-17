@@ -1,4 +1,4 @@
- @Library('github.com/hemant-demo/jenkins-demo-lib') _
+ @Library('github.com/nitin-demo/jenkins-demo-lib') _
     standardBuild ([
        workspace:  '''
        echo ${WORKSPACE}''',
